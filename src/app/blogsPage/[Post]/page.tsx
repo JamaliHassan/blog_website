@@ -29,7 +29,9 @@ interface Blogitem {
 }
 
 interface Props {
-  params:{ Post: string };
+  params: {
+    Post: string; 
+  };
 }
 
 const Page = ({ params }: Props) => {
