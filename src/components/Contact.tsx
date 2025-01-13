@@ -8,10 +8,13 @@ const ContactForm = () => {
       <div className="flex flex-col lg:flex-row justify-between items-center gap-4 px-2 lg:px-20 py-12 max-w-7xl my-6  mx-auto bg-white mt-6">
         <div className="lg:w-1/3 mb-10 lg:mb-0">
           <h1 className="text-4xl font-bold mb-4 text-[#495057]">
-          Get in Touch!
+            Get in Touch!
           </h1>
           <p className="text-lg text-[#a1a1a1] mb-6">
-          Hi there! I&apos;d love to hear from you. Whether you have questions, feedback, collaboration ideas, or just want to say hello, feel free to reach out. Fill out the form below, and I&apos;ll get back to you as soon as possible.
+            Hi there! I&apos;d love to hear from you. Whether you have
+            questions, feedback, collaboration ideas, or just want to say hello,
+            feel free to reach out. Fill out the form below, and I&apos;ll get
+            back to you as soon as possible.
           </p>
           <a
             href="mailto:contact@info.com"
@@ -24,13 +27,13 @@ const ContactForm = () => {
               href="#"
               className="text-gray-600 hover:text-gray-800 text-xl"
             >
-              <FaFacebook  className="transtition ease-linear hover:text-[#D4A373]"/>
+              <FaFacebook className="transtition ease-linear hover:text-[#D4A373]" />
             </Link>
             <Link
               href="#"
               className="text-gray-600 hover:text-gray-800 text-xl"
             >
-              <FaTwitter  className="transtition ease-linear hover:text-[#D4A373]"/>
+              <FaTwitter className="transtition ease-linear hover:text-[#D4A373]" />
             </Link>
             <Link
               href="#"

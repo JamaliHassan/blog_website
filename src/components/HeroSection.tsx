@@ -65,8 +65,8 @@ const HeroSection = () => {
   return (
     <section className="w-full h-[600px] relative">
       <div
-         className={`h-full absolute top-0 w-full bg-cover flex items-end text-white`}
-         style={{ backgroundImage: `url(${currentHero.image})` }}
+        className={`h-full absolute top-0 w-full bg-cover flex items-end text-white`}
+        style={{ backgroundImage: `url(${currentHero.image})` }}
       >
         <div className="ml-12  my-12 flex flex-col gap-4 w-[530px]">
           <h3 className="font-bold font-roboto text-[10px] bg-transparent max-w-fit p-2 border border-transparent rounded-full backdrop-blur-md bg-opacity-30">
