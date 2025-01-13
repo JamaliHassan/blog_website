@@ -29,7 +29,7 @@ interface Blogitem {
 }
 
 interface Props {
-  params: { Post: string };
+  params:{ Post: string };
 }
 
 const Page = ({ params }: Props) => {
@@ -51,8 +51,8 @@ const Page = ({ params }: Props) => {
  
 
   const builder = imageUrlBuilder(client);
-
-  const urlFor = (source: any) => {
+ 
+  const urlFor = (source:any) => {
     return builder.image(source).url();
   };
   const handleCommentSubmit = (e: React.FormEvent) => {

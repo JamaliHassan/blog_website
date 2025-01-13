@@ -28,7 +28,7 @@ interface BlogData {
   };
 }
 
-const blogs = () => {
+const Blogs = () => {
   const [data, setData] = useState<BlogData[]>([]);
 
   useEffect(() => {
@@ -135,4 +135,4 @@ const blogs = () => {
   );
 };
 
-export default blogs;
+export default Blogs;

@@ -11,7 +11,7 @@ const ContactForm = () => {
           Get in Touch!
           </h1>
           <p className="text-lg text-[#a1a1a1] mb-6">
-          Hi there! I'd love to hear from you. Whether you have questions, feedback, collaboration ideas, or just want to say hello, feel free to reach out. Fill out the form below, and I’ll get back to you as soon as possible.
+          Hi there! I&apos;d love to hear from you. Whether you have questions, feedback, collaboration ideas, or just want to say hello, feel free to reach out. Fill out the form below, and I&apos;ll get back to you as soon as possible.
           </p>
           <a
             href="mailto:contact@info.com"

@@ -51,15 +51,12 @@ const heroData: HeroData[] = [
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(true);
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsVisible(false);
       setTimeout(() => {
         setCurrentIndex((prevIndex) =>
           prevIndex === heroData.length - 1 ? 0 : prevIndex + 1
         );
-        setIsVisible(true);
       }, 200);
     }, 5000);
     return () => clearInterval(interval);
