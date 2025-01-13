@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Lora, League_Spartan, Roboto } from "next/font/google";
 import Header from "@/components/Header";
@@ -20,15 +19,7 @@ const lora = Lora({
   weight: ["400", "500", "600", "700"],
   variable: "--font-lora"
 });
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -43,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${roboto.className} ${lora.className} ${spartan.className} ${geistMono.variable} antialiased`}
+        className={` ${roboto.className} ${lora.className} ${spartan.className}  antialiased`}
       >
         <Header />
         {children}
