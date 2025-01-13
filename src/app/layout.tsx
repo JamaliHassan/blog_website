@@ -1,7 +1,26 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Lora, League_Spartan, Roboto } from "next/font/google";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
+const spartan = League_Spartan({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-spartan"
+});
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-roboto"
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-lora"
+});
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,8 +44,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${roboto.className} ${lora.className} ${spartan.className} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>

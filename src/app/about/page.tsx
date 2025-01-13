@@ -1,14 +1,13 @@
-import EditorsPick from "@/components/EditorsPick";
+import About from "@/components/About";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import PopularTopics from "@/components/PopularTopics";
+import React from "react";
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-[#E5E5E5]">
       <HeroSection />
-      <PopularTopics />
-      <EditorsPick />
+      <About />
       <Footer />
     </div>
   );
